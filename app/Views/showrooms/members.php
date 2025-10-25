@@ -39,13 +39,32 @@
         }
 
         /* Showroom Info Card */
-        .showroom-info-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 3rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
+         .showroom-info-card {
+             background: white;
+             border-radius: 15px;
+             padding: 2rem;
+             margin-bottom: 3rem;
+             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+         }
+
+         /* Inactive showroom highlighting */
+         .showroom-info-card.inactive {
+             border: 3px solid #dc3545;
+             background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+             box-shadow: 0 10px 30px rgba(220, 53, 69, 0.2);
+             position: relative;
+         }
+
+         .showroom-info-card.inactive::before {
+             content: '';
+             position: absolute;
+             top: 0;
+             left: 0;
+             right: 0;
+             height: 4px;
+             background: linear-gradient(90deg, #dc3545, #c82333);
+             border-radius: 15px 15px 0 0;
+         }
 
         .showroom-header {
             display: flex;
@@ -95,10 +114,29 @@
             color: #666;
         }
 
-        .category-silver {
-            background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
-            color: #555;
-        }
+         .category-silver {
+             background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+             color: #555;
+         }
+
+         /* Inactive status badge */
+         .status-inactive {
+             background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+             color: white;
+             font-weight: 700;
+             text-transform: uppercase;
+             letter-spacing: 0.5px;
+             padding: 0.25rem 0.75rem;
+             border-radius: 15px;
+             font-size: 0.8rem;
+             display: inline-flex;
+             align-items: center;
+             gap: 0.25rem;
+         }
+
+         .status-inactive i {
+             font-size: 0.9rem;
+         }
 
         .showroom-details {
             display: grid;
@@ -303,18 +341,26 @@
             </a>
         </div>
 
-        <!-- Showroom Information -->
-        <div class="showroom-info-card">
+         <!-- Showroom Information -->
+         <div class="showroom-info-card <?= ($showroom['status'] === 'inactive') ? 'inactive' : '' ?>">
             <div class="showroom-header">
                 <div class="showroom-icon">
                     <i class="fas fa-store"></i>
                 </div>
-                <div class="showroom-title">
-                    <h2><?= esc($showroom['showroom_name']) ?></h2>
-                    <span class="showroom-category category-<?= esc($showroom['category']) ?>">
-                        <?= ucfirst(esc($showroom['category'])) ?>
-                    </span>
-                </div>
+                 <div class="showroom-title">
+                     <h2><?= esc($showroom['showroom_name']) ?></h2>
+                     <div class="d-flex align-items-center gap-2 flex-wrap">
+                         <span class="showroom-category category-<?= esc($showroom['category']) ?>">
+                             <?= ucfirst(esc($showroom['category'])) ?>
+                         </span>
+                         <?php if ($showroom['status'] === 'inactive'): ?>
+                             <span class="status-inactive">
+                                 <i class="fas fa-exclamation-triangle"></i>
+                                 INACTIVE
+                             </span>
+                         <?php endif; ?>
+                     </div>
+                 </div>
             </div>
             
             <div class="showroom-details">

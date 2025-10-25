@@ -25,9 +25,9 @@ class Showrooms extends BaseController
         log_message('debug', 'Search: ' . $search);
         log_message('debug', 'Category: ' . $category);
         
-        // Build query for active showrooms
+        // Build query for all showrooms (including inactive)
         $builder = $this->showroomModel->builder();
-        $builder->where('status', 'active');
+        // Removed status filter to show all showrooms including inactive ones
         
         // Apply search filter
         if (!empty($search)) {
@@ -59,7 +59,6 @@ class Showrooms extends BaseController
         
         // Get unique categories for filter dropdown
         $categories = $this->showroomModel->select('category')
-                                         ->where('status', 'active')
                                          ->groupBy('category')
                                          ->findAll();
         
