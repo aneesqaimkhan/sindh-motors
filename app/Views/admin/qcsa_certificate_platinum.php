@@ -19,8 +19,8 @@
       --gold:#D3AF37;      /* rich gold - primary */
       --gold-2:#f4e4bc;    /* light gold - secondary */
       --gold-dark:#b8860b; /* dark gold for contrast */
-      --silver:#c0c0c0;    /* silver color */
-      --silver-dark:#a8a8a8; /* dark silver */
+      --silver:#E5F4E3;    /* light green color */
+      --silver-dark:#C8E6C9; /* dark green */
       --ink:#1c1f24;
       --blue-1:#1e5ba8;    /* primary blue */
       --blue-2:#164a8c;    /* dark blue accent */
