@@ -16,9 +16,11 @@
       --green-1:#0b5d4d;   /* primary */
       --green-2:#0e7460;   /* dark accent */
       --mint:#e9f7f3;      /* light */
-      --gold:#d4af37;      /* rich gold - primary */
+      --gold:#D3AF37;      /* rich gold - primary */
       --gold-2:#f4e4bc;    /* light gold - secondary */
       --gold-dark:#b8860b; /* dark gold for contrast */
+      --silver:#c0c0c0;    /* silver color */
+      --silver-dark:#a8a8a8; /* dark silver */
       --ink:#1c1f24;
       --blue-1:#1e5ba8;    /* primary blue */
       --blue-2:#164a8c;    /* dark blue accent */
@@ -77,19 +79,23 @@
     }
 
     .brand-title{
-      font-family:'Crimson Text', serif; letter-spacing:.8px; color:var(--gold); font-weight:600;
+      font-family:'Crimson Text', serif; 
+      letter-spacing:.8px; 
+      color:var(--gold); 
+      font-weight:600;
+      text-shadow: 0 1px 3px var(--silver);
     }
 
     .headline{ 
       font-family:'Playfair Display', serif; 
       color:var(--gold); 
       font-weight:700; 
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      text-shadow: 0 2px 4px var(--silver);
     }
     .subhead{ 
       font-family:'Crimson Text', serif; 
       font-weight:600; 
-      color:var(--gold-2); 
+      color:var(--silver); 
       letter-spacing:1px;
     }
 
@@ -107,7 +113,7 @@
       color:var(--gold); 
       line-height:1.2; 
       font-weight:600;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+      text-shadow: 0 2px 4px var(--silver);
     }
 
     .badge{
@@ -200,16 +206,22 @@
       .recipient{ 
         font-size: 28px !important; 
         line-height: 1.2 !important;
+        color: var(--gold) !important;
+        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .headline{ 
         font-size: 42px !important;
         font-weight: 700 !important;
         letter-spacing: 1.5px !important;
+        color: var(--gold) !important;
+        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .headline.display-6 {
         font-size: 42px !important;
         font-weight: 700 !important;
         letter-spacing: 1.5px !important;
+        color: var(--gold) !important;
+        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .d-flex.align-items-center.justify-content-center.mb-3 {
         margin-top: 35px !important;
@@ -224,6 +236,7 @@
       }
       .subhead{ 
         font-size: 17px !important;
+        color: var(--silver) !important;
       }
       .divider{ 
         margin: 8px 0 10px !important;
@@ -338,38 +351,56 @@
       .brand-title{ 
         font-size: 26px !important;
         font-weight: 700 !important;
+        color: var(--gold) !important;
+        text-shadow: 0 1px 3px var(--silver) !important;
       }
       .brand-title.h3 {
         font-size: 26px !important;
         font-weight: 700 !important;
+        color: var(--gold) !important;
+        text-shadow: 0 1px 3px var(--silver) !important;
       }
       .h3.brand-title {
         font-size: 26px !important;
         font-weight: 700 !important;
+        color: var(--gold) !important;
+        text-shadow: 0 1px 3px var(--silver) !important;
       }
       .d-flex.align-items-center.justify-content-center.mb-3 .brand-title {
         font-size: 26px !important;
         font-weight: 700 !important;
+        color: var(--gold) !important;
+        text-shadow: 0 1px 3px var(--silver) !important;
       }
       .display-6 {
         font-size: 42px !important;
         font-weight: 700 !important;
+        color: var(--gold) !important;
+        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .text-center .headline {
         font-size: 42px !important;
         font-weight: 700 !important;
+        color: var(--gold) !important;
+        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .text-center .display-6 {
         font-size: 42px !important;
         font-weight: 700 !important;
+        color: var(--gold) !important;
+        text-shadow: 0 2px 4px var(--silver) !important;
       }
       div.headline {
         font-size: 42px !important;
+        color: var(--gold) !important;
+        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .position-relative .headline.display-6 {
         font-size: 42px !important;
         font-weight: 700 !important;
         letter-spacing: 1.5px !important;
+        color: var(--gold) !important;
+        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .fs-5 {
         font-size: 17px !important;
@@ -405,6 +436,8 @@
         font-weight: 700 !important;
         letter-spacing: 1.5px !important;
         line-height: 1.2 !important;
+        color: var(--gold) !important;
+        text-shadow: 0 2px 4px var(--silver) !important;
       }
     }
   </style>
@@ -444,10 +477,10 @@
           </div>
           <div class="subhead fs-5" style="margin-top: 20px; margin-bottom: 20px;">OF PLATINUM REGISTRATION</div>
           <div class="divider"></div>
-          <p class="mb-2" style="color: var(--gold-2); font-family: 'Crimson Text', serif; font-weight: 500; letter-spacing: 0.5px;">This certificate is proudly presented to</p>
-          <p class="mb-2" style="color: var(--gold-2); font-family: 'Crimson Text', serif; font-weight: 500; letter-spacing: 0.5px;">Platinum Showroom Registration Awarded To</p>
+          <p class="mb-2" style="color: var(--silver); font-family: 'Crimson Text', serif; font-weight: 500; letter-spacing: 0.5px;">This certificate is proudly presented to</p>
+          <p class="mb-2" style="color: var(--silver); font-family: 'Crimson Text', serif; font-weight: 500; letter-spacing: 0.5px;">Platinum Showroom Registration Awarded To</p>
           <div class="recipient" id="recipientName"><?= esc($showroom['name']) ?></div>
-          <p class="mt-2 mb-1" style="color: var(--gold-2); font-family: 'Crimson Text', serif; font-weight: 500; letter-spacing: 0.3px; line-height: 1.4;">In recognition of their exceptional commitment to excellence in the automotive community and adherence to QCSA Platinum standards.</p>
+          <p class="mt-2 mb-1" style="color: var(--silver); font-family: 'Crimson Text', serif; font-weight: 500; letter-spacing: 0.3px; line-height: 1.4;">In recognition of their exceptional commitment to excellence in the automotive community and adherence to QCSA Platinum standards.</p>
           <span class="badge mt-1">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l2.39 4.84 5.34.78-3.86 3.77.91 5.31L12 14.77 7.22 16.7l.91-5.31L4.27 7.62l5.34-.78L12 2z" stroke="currentColor" stroke-width="2"/></svg>
             QCSA - Platinum Member
@@ -493,11 +526,11 @@
             </div>
             <div class="meta-line"></div>
             <div class="meta-label" style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">Signature</div>
-            <div class="small mt-2" style="color: var(--gold-2); font-family: 'Crimson Text', serif; font-weight: 500;">Muhammad Yaseen Beharn (PRESIDENT)</div>
+            <div class="small mt-2" style="color: var(--silver); font-family: 'Crimson Text', serif; font-weight: 500;">Muhammad Yaseen Beharn (PRESIDENT)</div>
           </div>
           <div class="col-3 ps-3">
             
-            <div class="small mt-2" id="issueDateLine" style="color: var(--gold-2); font-family: 'Crimson Text', serif; font-weight: 500;"></div>
+            <div class="small mt-2" id="issueDateLine" style="color: var(--silver); font-family: 'Crimson Text', serif; font-weight: 500;"></div>
             <div class="meta-line"></div>
             <div class="meta-label" style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">Date</div>
              <div class="small mt-2" id="" style="visibility: hidden;">      -</div>
