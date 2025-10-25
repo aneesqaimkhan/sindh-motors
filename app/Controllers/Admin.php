@@ -1081,7 +1081,7 @@ class Admin extends BaseController
         if (strtolower($showroom['category']) === 'platinum') {
             return view('admin/membership_card_platinum', $data);
         } else {
-            return view('admin/membership_card', $data);
+            return view('member_card', $data);
         }
     }
 

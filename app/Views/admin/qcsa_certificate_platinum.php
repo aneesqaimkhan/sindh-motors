@@ -46,7 +46,7 @@
 
     .certificate{
       position: relative;
-      background: url('<?= base_url('public/assets/certificate/border.jpeg') ?>') no-repeat center center;
+      background: url('<?= base_url('public/assets/certificate/border-gold.jpeg') ?>') no-repeat center center;
       background-size: 100% 100%;
       border-radius: 12px;
       overflow: hidden;
@@ -264,7 +264,9 @@
       }
       .showroom-info-section {
         margin-top: 10px !important;
-        padding: 10px 12px !important;
+        margin-left: 35px !important;
+        margin-right: 35px !important;
+        padding: 15px 20px !important;
         background: linear-gradient(135deg, var(--gold-2), #f7f6f4) !important;
         border: 2px solid var(--gold) !important;
         border-radius: 8px !important;
@@ -477,7 +479,7 @@
             <!-- Award Logo - Float Right -->
 
             <div style="position: absolute; right: 50px; top: 60%; transform: translateY(-50%);">
-              <img src="<?= base_url('public/assets/certificate/award.png') ?>" alt="Award Badge" style="width: 300px; height: 150px; object-fit: contain;">
+              <img src="<?= base_url('public/assets/certificate/award-gold.png') ?>" alt="Award Badge" style="width: 300px; height: 150px; object-fit: contain;">
             </div>
             
           </div>
@@ -494,7 +496,7 @@
         </div>
 
         <!-- Showroom Details Section -->
-        <div class="mt-3 p-2 showroom-info-section" style="background: linear-gradient(135deg, var(--gold-2), #f7f6f4); border-radius: 8px; border: 2px solid var(--gold);">
+        <div class="mt-3 p-3 showroom-info-section" style="background: linear-gradient(135deg, var(--gold-2), #f7f6f4); border-radius: 8px; border: 2px solid var(--gold); margin: 0 35px;">
           <h6 class="text-center mb-2" style="color: var(--gold-dark); font-weight: 600; font-family: 'Crimson Text', serif; letter-spacing: 0.5px;">Platinum Showroom Information</h6>
           <div class="row g-2">
             <div class="col-md-6">
@@ -528,7 +530,7 @@
           <div class="col-1"></div>
           <div class="col-4">
             <div class="text-center mb-2">
-              <img src="<?= base_url('public/assets/signature/signature.png') ?>" alt="Signature" style="width: 80px;/* height: auto; */object-fit: contain;display: block;margin-top: -20px;">
+              <img src="<?= base_url('public/assets/signature/signature-gold.png') ?>" alt="Signature" style="width: 80px;/* height: auto; */object-fit: contain;display: block;margin-top: -20px;">
             </div>
             <div class="meta-line"></div>
             <div class="meta-label" style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">Signature</div>
