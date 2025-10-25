@@ -9,7 +9,7 @@
         body {
             background: #e9ecef;
             padding: 20px;
-            font-family: Arial, sans-serif;
+            font-family: Courier, monospace;
         }
         
         .cards-wrapper {
@@ -95,7 +95,7 @@
             <div class="card-label">FRONT SIDE</div>
             
             <!-- Include Front Card Content -->
-            <div style="width:450px; height:270px; border-radius:10px; background:linear-gradient(to bottom,#000000,#1a1a1a); color:#ffffff; position:relative; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.3); padding:30px 18px;">
+            <div style="width:450px; height:270px; border-radius:10px; background:linear-gradient(to bottom,#000000,#1a1a1a); color:#ffffff; position:relative; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.3); padding:30px 18px; font-family: Courier, monospace;">
                 <!-- Top decorative strips -->
                 <div style="position:absolute; top:0; left:0; right:0; height:25px; background-image:url('<?= base_url('public/assets/card/ajrak1.jpg') ?>'); background-repeat:no-repeat; background-position:center; background-size:cover; z-index:2;"></div>
                 
@@ -155,7 +155,7 @@
             <div class="card-label">BACK SIDE</div>
             
             <!-- Include Back Card Content -->
-            <div style="width:450px; height:270px; border-radius:10px; background:linear-gradient(to bottom,#000000,#1a1a1a); color:#ffffff; position:relative; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.3); padding:25px 18px 35px 18px;">
+            <div style="width:450px; height:270px; border-radius:10px; background:linear-gradient(to bottom,#000000,#1a1a1a); color:#ffffff; position:relative; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.3); padding:25px 18px 35px 18px; font-family: Courier, monospace;">
                 <!-- Top decorative image strip -->
                 <div style="position:absolute; top:0; left:0; right:0; height:25px; background-image:url('<?= base_url('public/assets/card/ajrak1.jpg') ?>'); background-repeat:no-repeat; background-position:center; background-size:cover; z-index:2;"></div>
                 
@@ -175,44 +175,44 @@
                 <div style="display:flex; align-items:flex-start;">
                     <div style="flex: 1; position:relative; z-index:3; font-size:13px; line-height:1.2; min-height: 150px;">
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Name</div>
+                            <div style="width:103px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Name</div>
                             <span style="color: #ffffff;">:</span>
                             <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= esc($member['member_name']) ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Father Name</div>
+                            <div style="width:103px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Father Name</div>
                             <span style="color: #ffffff;">:</span>
                             <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= esc($member['father_name'] ?? '') ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Membership #</div>
+                            <div style="width:103px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Membership #</div>
                             <span style="color: #ffffff;">:</span>
                             <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= esc($showroom['showroom_registration_number'] ?? '') ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">CNIC #</div>
+                            <div style="width:103px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">CNIC #</div>
                             <span style="color: #ffffff;">:</span>
                             <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= 
                                 preg_replace('/(\d{5})(\d{7})(\d{1})/', '$1-$2-$3', esc($member['cnic_no'])) 
                             ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Showroom</div>
+                            <div style="width:103px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Showroom</div>
                             <span style="color: #ffffff;">:</span>
                             <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= esc($showroom['showroom_name'] ?? '') ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Blood Group</div>
+                            <div style="width:103px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Blood Group</div>
                             <span style="color: #ffffff;">:</span>
                             <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= esc($member['blood_group']) ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Mobile #</div>
+                            <div style="width:103px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Mobile #</div>
                             <span style="color: #ffffff;">:</span>
                             <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= esc($member['cell_no']) ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Address</div>
+                            <div style="width:103px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Address</div>
                             <span style="color: #ffffff;">:</span>
                             <div style="overflow: visible; max-width: 280px; display: block; word-wrap: break-word; line-height: 1.1; font-weight: bold; padding-left: 5px; color: #ffffff !important;"><?= esc($showroom['showroom_address'] ?? '') ?></div>
                         </div>
