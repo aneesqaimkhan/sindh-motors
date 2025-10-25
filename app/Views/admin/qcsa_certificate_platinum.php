@@ -518,14 +518,14 @@
               <img src="<?= base_url('public/assets/signature/signature-white.png') ?>" alt="Signature" style="width: 80px;/* height: auto; */object-fit: contain;display: block;margin-top: -20px;">
             </div>
             <div class="meta-line"></div>
-            <div class="meta-label" style="color: var(--gold-dark); font-family: serif; font-weight: 600; letter-spacing: 0.5px;">Signature</div>
+            <div class="meta-label" style="color: #ffffff; font-family: serif; font-weight: 600; letter-spacing: 0.5px;">Signature</div>
             <div class="small mt-2" style="color: var(--silver); font-family: serif; font-weight: 500;">Muhammad Yaseen Beharn (PRESIDENT)</div>
           </div>
           <div class="col-3 ps-3">
             
             <div class="small mt-2" id="issueDateLine" style="color: var(--silver); font-family: 'Crimson Text', serif; font-weight: 500;"></div>
             <div class="meta-line"></div>
-            <div class="meta-label" style="color: var(--gold-dark); font-family: serif; font-weight: 600; letter-spacing: 0.5px;">Date</div>
+            <div class="meta-label" style="color: #ffffff; font-family: serif; font-weight: 600; letter-spacing: 0.5px;">Date</div>
              <div class="small mt-2" id="" style="visibility: hidden;">      -</div>
           </div>
           <div class="col-4 text-center">
