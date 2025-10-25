@@ -118,10 +118,10 @@
 
     .badge{
       position:relative; display:inline-flex; align-items:center; justify-content:center; gap:6px; padding:8px 14px; border-radius:999px;
-      background: linear-gradient(145deg, var(--platinum-light), var(--platinum)); color:#1b1b1b; font-weight:700; letter-spacing:.4px;
-      border:2px solid var(--platinum-dark); box-shadow:0 6px 18px rgba(181,181,181,.35); font-size:14px;
+      background: #f8f8f8; color:var(--gold-dark); font-weight:700; letter-spacing:.4px;
+      border:2px solid var(--silver-dark); box-shadow:0 6px 18px rgba(181,181,181,.35); font-size:14px;
     }
-    .badge svg{ width:18px; height:18px; }
+    .badge svg{ width:18px; height:18px; color:var(--gold-dark); fill:var(--gold-dark); }
 
     .meta-row{ margin-top:18px; }
     .meta-label{ font-size:11px; letter-spacing:1px; opacity:.8; }
@@ -315,10 +315,15 @@
         font-size: 14px !important;
         padding: 7px 13px !important;
         margin-top: 5px !important;
+        background: #f8f8f8 !important;
+        color: var(--gold-dark) !important;
+        border: 2px solid var(--silver-dark) !important;
       }
       .badge svg {
         width: 16px !important;
         height: 16px !important;
+        color: var(--gold-dark) !important;
+        fill: var(--gold-dark) !important;
       }
       .position-relative {
         margin-bottom: 8px !important;
