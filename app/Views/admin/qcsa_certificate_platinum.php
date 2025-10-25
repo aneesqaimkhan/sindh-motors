@@ -278,11 +278,12 @@
         color: var(--gold-dark) !important;
         font-family: 'Crimson Text', serif !important;
         font-weight: 600 !important;
+        letter-spacing: 0.5px !important;
       }
       .showroom-info-section span {
-        color: var(--ink) !important;
-        font-family: 'Poppins', sans-serif !important;
-        font-weight: 500 !important;
+        color: var(--gold-dark) !important;
+        font-family: 'Crimson Text', serif !important;
+        font-weight: 600 !important;
       }
       .showroom-info-section h6 {
         margin-bottom: 8px !important;
@@ -493,26 +494,26 @@
           <div class="row g-2">
             <div class="col-md-6">
               <div class="d-flex align-items-center">
-                <strong style="color: var(--gold-dark); min-width: 140px; font-family: 'Crimson Text', serif; font-weight: 600;">CNIC No:</strong>
-                <span style="color: var(--ink); font-family: 'Poppins', sans-serif; font-weight: 500;"><?= esc($showroom['cnic_no'] ?? '') ?></span>
+                <strong style="color: var(--gold-dark); min-width: 140px; font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">CNIC No:</strong>
+                <span style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600;"><?= esc($showroom['cnic_no'] ?? '') ?></span>
               </div>
             </div>
             <div class="col-md-6">
               <div class="d-flex align-items-center">
-                <strong style="color: var(--gold-dark); min-width: 140px; font-family: 'Crimson Text', serif; font-weight: 600;">Mobile Number:</strong>
-                <span style="color: var(--ink); font-family: 'Poppins', sans-serif; font-weight: 500;"><?= esc($showroom['cell_no'] ?? $showroom['phone'] ?? '') ?></span>
+                <strong style="color: var(--gold-dark); min-width: 140px; font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">Mobile Number:</strong>
+                <span style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600;"><?= esc($showroom['cell_no'] ?? $showroom['phone'] ?? '') ?></span>
               </div>
             </div>
             <div class="col-md-6">
               <div class="d-flex align-items-center">
-                <strong style="color: var(--gold-dark); min-width: 140px; font-family: 'Crimson Text', serif; font-weight: 600;">Showroom Name:</strong>
-                <span style="color: var(--ink); font-family: 'Poppins', sans-serif; font-weight: 500;"><?= esc($showroom['showroom_name'] ?? '') ?></span>
+                <strong style="color: var(--gold-dark); min-width: 140px; font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">Showroom Name:</strong>
+                <span style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600;"><?= esc($showroom['showroom_name'] ?? '') ?></span>
               </div>
             </div>
             <div class="col-md-6">
               <div class="d-flex align-items-center">
-                <strong style="color: var(--gold-dark); min-width: 140px; font-family: 'Crimson Text', serif; font-weight: 600;">Address:</strong>
-                <span style="color: var(--ink); font-family: 'Poppins', sans-serif; font-weight: 500;"><?= esc($showroom['showroom_address'] ?? '') ?></span>
+                <strong style="color: var(--gold-dark); min-width: 140px; font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">Address:</strong>
+                <span style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600;"><?= esc($showroom['showroom_address'] ?? '') ?></span>
               </div>
             </div>
           </div>
