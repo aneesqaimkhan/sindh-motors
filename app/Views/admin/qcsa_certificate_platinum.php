@@ -485,7 +485,7 @@
           </div>
         </div>
 
-        <div class="row meta-row g-3 align-items-end">
+        <div style="margin-top: 5px;" class="row g-3 align-items-end">
           <div class="col-1"></div>
           <div class="col-4">
             <div class="text-center mb-2">
