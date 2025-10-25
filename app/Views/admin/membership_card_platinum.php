@@ -95,7 +95,7 @@
             <div class="card-label">FRONT SIDE</div>
             
             <!-- Include Front Card Content -->
-            <div style="width:450px; height:270px; border-radius:10px; background:linear-gradient(to bottom,#000000,#1a1a1a); color:#b78b29; position:relative; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.3); padding:30px 18px;">
+            <div style="width:450px; height:270px; border-radius:10px; background:linear-gradient(to bottom,#000000,#1a1a1a); color:#ffffff; position:relative; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.3); padding:30px 18px;">
                 <!-- Top decorative strips -->
                 <div style="position:absolute; top:0; left:0; right:0; height:25px; background-image:url('<?= base_url('public/assets/card/ajrak1.jpg') ?>'); background-repeat:no-repeat; background-position:center; background-size:cover; z-index:2;"></div>
                 
@@ -107,14 +107,14 @@
                 </div>
                 
                 <!-- Association Name -->
-                <div style="font-weight:bold; font-size:16px; margin-top:12px; color:#b78b29; letter-spacing:0.5px; z-index:3; position:relative; text-align:center;">
+                <div style="font-weight:bold; font-size:16px; margin-top:12px; color:#ffffff; letter-spacing:0.5px; z-index:3; position:relative; text-align:center;">
                     QASIMABAD CAR SHOWROOMS ASSOCIATION HYDERABAD
                 </div>
                 
                 <!-- QR Code and Validity in one row -->
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-top:0px; height: 86px; padding:0 20px; position:relative; z-index:3;">
                     <img src="<?= base_url('admin/qrcode/' . ($showroom['id'] ?? '')) ?>" alt="QR Code" style="width:80px; height:54px; margin-top: -33px; object-fit:contain;">
-                    <div style="font-size:13px; font-weight:500; color:#b78b29; text-align:left;">
+                    <div style="font-size:13px; font-weight:500; color:#ffffff; text-align:left;">
                         <?php
                         // Calculate valid from and valid until dates
                         $validFrom = new DateTime($member['created_at']);
@@ -127,18 +127,18 @@
                         
                         <div style="display: flex; align-items: center; gap: 8px;">
                             <div style="display: flex; align-items: center; gap: 4px;">
-                                <div style="color: #b78b29; font-size: 20px; font-weight: bold; background: transparent;">←</div>
+                                <div style="color: #ffffff; font-size: 20px; font-weight: bold; background: transparent;">←</div>
                                 <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                                    <div style="font-size: 8px; color: #b78b29; line-height: 1.1; margin-bottom: 2px;">Valid<br>From</div>
-                                    <div style="font-size: 14px; font-weight: bold; color: #b78b29;"><?= $validFromFormatted ?></div>
+                                    <div style="font-size: 8px; color: #ffffff; line-height: 1.1; margin-bottom: 2px;">Valid<br>From</div>
+                                    <div style="font-size: 14px; font-weight: bold; color: #ffffff;"><?= $validFromFormatted ?></div>
                                 </div>
                             </div>
                             
                             <div style="display: flex; align-items: center; gap: 4px;">
-                                <div style="color: #b78b29; font-size: 20px; font-weight: bold; background: transparent;">→</div>
+                                <div style="color: #ffffff; font-size: 20px; font-weight: bold; background: transparent;">→</div>
                                 <div style="display: flex; flex-direction: column; align-items: flex-start;">
-                                    <div style="font-size: 8px; color: #b78b29; line-height: 1.1; margin-bottom: 2px;">Valid<br>Until</div>
-                                    <div style="font-size: 14px; font-weight: bold; color: #b78b29;"><?= $validUntilFormatted ?></div>
+                                    <div style="font-size: 8px; color: #ffffff; line-height: 1.1; margin-bottom: 2px;">Valid<br>Until</div>
+                                    <div style="font-size: 14px; font-weight: bold; color: #ffffff;"><?= $validUntilFormatted ?></div>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +155,7 @@
             <div class="card-label">BACK SIDE</div>
             
             <!-- Include Back Card Content -->
-            <div style="width:450px; height:270px; border-radius:10px; background:linear-gradient(to bottom,#000000,#1a1a1a); color:#b78b29; position:relative; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.3); padding:25px 18px 35px 18px;">
+            <div style="width:450px; height:270px; border-radius:10px; background:linear-gradient(to bottom,#000000,#1a1a1a); color:#ffffff; position:relative; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.3); padding:25px 18px 35px 18px;">
                 <!-- Top decorative image strip -->
                 <div style="position:absolute; top:0; left:0; right:0; height:25px; background-image:url('<?= base_url('public/assets/card/ajrak1.jpg') ?>'); background-repeat:no-repeat; background-position:center; background-size:cover; z-index:2;"></div>
                 
@@ -165,7 +165,7 @@
                 </div>
                 
                 <!-- Membership Card Heading -->
-                <div style="text-align:center; color:#b78b29; padding:2px 5px; font-weight:bold; font-size:12px; letter-spacing:0.5px; margin-bottom:4px; position:relative; z-index:3; text-transform:uppercase;">
+                <div style="text-align:center; color:#ffffff; padding:2px 5px; font-weight:bold; font-size:12px; letter-spacing:0.5px; margin-bottom:4px; position:relative; z-index:3; text-transform:uppercase;">
                     Membership Card
                 </div>
                 
@@ -175,46 +175,46 @@
                 <div style="display:flex; align-items:flex-start;">
                     <div style="flex: 1; position:relative; z-index:3; font-size:13px; line-height:1.2; min-height: 150px;">
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #b78b29;">Name</div>
-                            <span style="color: #b78b29;">:</span>
-                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #b78b29 !important;"><?= esc($member['member_name']) ?></div>
+                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Name</div>
+                            <span style="color: #ffffff;">:</span>
+                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= esc($member['member_name']) ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #b78b29;">Father Name</div>
-                            <span style="color: #b78b29;">:</span>
-                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #b78b29 !important;"><?= esc($member['father_name'] ?? '') ?></div>
+                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Father Name</div>
+                            <span style="color: #ffffff;">:</span>
+                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= esc($member['father_name'] ?? '') ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #b78b29;">Membership #</div>
-                            <span style="color: #b78b29;">:</span>
-                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #b78b29 !important;"><?= esc($showroom['showroom_registration_number'] ?? '') ?></div>
+                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Membership #</div>
+                            <span style="color: #ffffff;">:</span>
+                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= esc($showroom['showroom_registration_number'] ?? '') ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #b78b29;">CNIC #</div>
-                            <span style="color: #b78b29;">:</span>
-                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #b78b29 !important;"><?= 
+                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">CNIC #</div>
+                            <span style="color: #ffffff;">:</span>
+                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= 
                                 preg_replace('/(\d{5})(\d{7})(\d{1})/', '$1-$2-$3', esc($member['cnic_no'])) 
                             ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #b78b29;">Showroom</div>
-                            <span style="color: #b78b29;">:</span>
-                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #b78b29 !important;"><?= esc($showroom['showroom_name'] ?? '') ?></div>
+                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Showroom</div>
+                            <span style="color: #ffffff;">:</span>
+                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= esc($showroom['showroom_name'] ?? '') ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #b78b29;">Blood Group</div>
-                            <span style="color: #b78b29;">:</span>
-                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #b78b29 !important;"><?= esc($member['blood_group']) ?></div>
+                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Blood Group</div>
+                            <span style="color: #ffffff;">:</span>
+                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= esc($member['blood_group']) ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #b78b29;">Mobile #</div>
-                            <span style="color: #b78b29;">:</span>
-                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #b78b29 !important;"><?= esc($member['cell_no']) ?></div>
+                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Mobile #</div>
+                            <span style="color: #ffffff;">:</span>
+                            <div style="flex:1; word-break:break-word; font-weight: bold; max-width: 280px; padding-left: 5px; color: #ffffff !important;"><?= esc($member['cell_no']) ?></div>
                         </div>
                         <div style="display:flex; margin-bottom:1px; width: 100%; max-width: 100%; align-items: flex-start;">
-                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #b78b29;">Address</div>
-                            <span style="color: #b78b29;">:</span>
-                            <div style="overflow: visible; max-width: 280px; display: block; word-wrap: break-word; line-height: 1.1; font-weight: bold; padding-left: 5px; color: #b78b29 !important;"><?= esc($showroom['showroom_address'] ?? '') ?></div>
+                            <div style="width:95px; font-weight:bold; flex-shrink:0; text-align: left; padding-right: 5px; color: #ffffff;">Address</div>
+                            <span style="color: #ffffff;">:</span>
+                            <div style="overflow: visible; max-width: 280px; display: block; word-wrap: break-word; line-height: 1.1; font-weight: bold; padding-left: 5px; color: #ffffff !important;"><?= esc($showroom['showroom_address'] ?? '') ?></div>
                         </div>
                     </div>
                     
@@ -226,7 +226,7 @@
                                 <img src="<?= base_url('public/assets/images/default-user.png') ?>" alt="User Photo" style="width:80px; height:90px; border:2px solid #000; border-radius:5px; object-fit:cover; background:#fff; margin-top: 5px; display:block;">
                             <?php endif; ?>
                             <img src="<?= base_url('public/assets/signature/signature.png') ?>" alt="Signature" style="width:80px; height:auto; margin-top:-10px; object-fit:contain; display:block; background:transparent;">
-                            <div style="font-weight:bold; font-size:9px; margin-top:-10px; color:#b78b29;">M.Yaseen (President)</div>
+                            <div style="font-weight:bold; font-size:9px; margin-top:-10px; color:#ffffff;">M.Yaseen (President)</div>
                         </div>
                     </div>
                 </div>
