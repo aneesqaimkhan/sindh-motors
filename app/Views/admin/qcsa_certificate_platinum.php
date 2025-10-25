@@ -33,7 +33,7 @@
     html, body{
       height:100%;
       background:#f5f6f8;
-      font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      font-family: serif;
       color:var(--ink);
     }
 
@@ -79,21 +79,21 @@
     }
 
     .brand-title{
-      font-family:'Crimson Text', serif; 
+      font-family: serif; 
       letter-spacing:.8px; 
-      color:var(--gold); 
+      color:#ffffff; 
       font-weight:600;
     }
 
     .headline{ 
-      font-family:'Playfair Display', serif; 
-      color:var(--gold); 
+      font-family: serif; 
+      color:#ffffff; 
       font-weight:700; 
     }
     .subhead{ 
-      font-family:'Crimson Text', serif; 
+      font-family: serif; 
       font-weight:600; 
-      color:var(--silver); 
+      color:#ffffff; 
       letter-spacing:1px;
     }
 
@@ -106,9 +106,9 @@
     }
 
     .recipient{
-      font-family:'Playfair Display', serif; 
+      font-family: serif; 
       font-size:32px; 
-      color:var(--gold); 
+      color:#D3AF37; 
       line-height:1.2; 
       font-weight:600;
     }
@@ -203,19 +203,19 @@
       .recipient{ 
         font-size: 28px !important; 
         line-height: 1.2 !important;
-        color: var(--gold) !important;
+        color: #D3AF37 !important;
       }
       .headline{ 
         font-size: 42px !important;
         font-weight: 700 !important;
         letter-spacing: 1.5px !important;
-        color: var(--gold) !important;
+        color: #ffffff !important;
       }
       .headline.display-6 {
         font-size: 42px !important;
         font-weight: 700 !important;
         letter-spacing: 1.5px !important;
-        color: var(--gold) !important;
+        color: #ffffff !important;
       }
       .d-flex.align-items-center.justify-content-center.mb-3 {
         margin-top: 35px !important;
@@ -224,13 +224,14 @@
       .registration-number {
         font-size: 13px !important;
         padding-left: 10px !important;
+        color: #ffffff !important;
       }
       .position-relative > div:last-child {
         padding-right: 10px !important;
       }
       .subhead{ 
         font-size: 17px !important;
-        color: var(--silver) !important;
+        color: #ffffff !important;
       }
       .divider{ 
         margin: 8px 0 10px !important;
@@ -267,18 +268,18 @@
       }
       .showroom-info-section h6 {
         color: var(--gold-dark) !important;
-        font-family: 'Crimson Text', serif !important;
+        font-family: serif !important;
         font-weight: 600 !important;
       }
       .showroom-info-section strong {
         color: var(--gold-dark) !important;
-        font-family: 'Crimson Text', serif !important;
+        font-family: serif !important;
         font-weight: 600 !important;
         letter-spacing: 0.5px !important;
       }
       .showroom-info-section span {
         color: var(--gold-dark) !important;
-        font-family: 'Crimson Text', serif !important;
+        font-family: serif !important;
         font-weight: 600 !important;
       }
       .showroom-info-section h6 {
@@ -353,47 +354,47 @@
       .brand-title{ 
         font-size: 26px !important;
         font-weight: 700 !important;
-        color: var(--gold) !important;
+        color: #ffffff !important;
       }
       .brand-title.h3 {
         font-size: 26px !important;
         font-weight: 700 !important;
-        color: var(--gold) !important;
+        color: #ffffff !important;
       }
       .h3.brand-title {
         font-size: 26px !important;
         font-weight: 700 !important;
-        color: var(--gold) !important;
+        color: #ffffff !important;
       }
       .d-flex.align-items-center.justify-content-center.mb-3 .brand-title {
         font-size: 26px !important;
         font-weight: 700 !important;
-        color: var(--gold) !important;
+        color: #ffffff !important;
       }
       .display-6 {
         font-size: 42px !important;
         font-weight: 700 !important;
-        color: var(--gold) !important;
+        color: #ffffff !important;
       }
       .text-center .headline {
         font-size: 42px !important;
         font-weight: 700 !important;
-        color: var(--gold) !important;
+        color: #ffffff !important;
       }
       .text-center .display-6 {
         font-size: 42px !important;
         font-weight: 700 !important;
-        color: var(--gold) !important;
+        color: #ffffff !important;
       }
       div.headline {
         font-size: 42px !important;
-        color: var(--gold) !important;
+        color: #ffffff !important;
       }
       .position-relative .headline.display-6 {
         font-size: 42px !important;
         font-weight: 700 !important;
         letter-spacing: 1.5px !important;
-        color: var(--gold) !important;
+        color: #ffffff !important;
       }
       .fs-5 {
         font-size: 17px !important;
@@ -429,7 +430,7 @@
         font-weight: 700 !important;
         letter-spacing: 1.5px !important;
         line-height: 1.2 !important;
-        color: var(--gold) !important;
+        color: #ffffff !important;
       }
     }
   </style>
@@ -453,7 +454,7 @@
         <div class="text-center mt-1">
           <div class="position-relative mb-2">
             <!-- Registration Number - Float Left -->
-            <div class="registration-number" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 16px; font-weight: bold; color: var(--gold-dark); font-family: 'Crimson Text', serif; letter-spacing: 0.5px; padding-left: 10px;">
+            <div class="registration-number" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 16px; font-weight: bold; color: #ffffff; font-family: serif; letter-spacing: 0.5px; padding-left: 10px;">
               Registration #: <?= esc($showroom['showroom_registration_number'] ?? '') ?>
             </div>
             
@@ -469,10 +470,10 @@
           </div>
           <div class="subhead fs-5" style="margin-top: 20px; margin-bottom: 20px;">OF PLATINUM REGISTRATION</div>
           <div class="divider"></div>
-          <p class="mb-2" style="color: var(--silver); font-family: 'Crimson Text', serif; font-weight: 500; letter-spacing: 0.5px;">This certificate is proudly presented to</p>
-          <p class="mb-2" style="color: var(--silver); font-family: 'Crimson Text', serif; font-weight: 500; letter-spacing: 0.5px;">Platinum Showroom Registration Awarded To</p>
+          <p class="mb-2" style="color: #ffffff; font-family: serif; font-weight: 500; letter-spacing: 0.5px;">This certificate is proudly presented to</p>
+          <p class="mb-2" style="color: #ffffff; font-family: serif; font-weight: 500; letter-spacing: 0.5px;">Platinum Showroom Registration Awarded To</p>
           <div class="recipient" id="recipientName"><?= esc($showroom['name']) ?></div>
-          <p class="mt-2 mb-1" style="color: var(--silver); font-family: 'Crimson Text', serif; font-weight: 500; letter-spacing: 0.3px; line-height: 1.4;">In recognition of their exceptional commitment to excellence in the automotive community and adherence to QCSA Platinum standards.</p>
+          <p class="mt-2 mb-1" style="color: #ffffff; font-family: serif; font-weight: 500; letter-spacing: 0.3px; line-height: 1.4;">In recognition of their exceptional commitment to excellence in the automotive community and adherence to QCSA Platinum standards.</p>
           <span class="badge mt-1">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l2.39 4.84 5.34.78-3.86 3.77.91 5.31L12 14.77 7.22 16.7l.91-5.31L4.27 7.62l5.34-.78L12 2z" stroke="currentColor" stroke-width="2"/></svg>
             QCSA - Platinum Member
@@ -481,30 +482,30 @@
 
         <!-- Showroom Details Section -->
         <div class="mt-3 p-3 showroom-info-section" style="background: linear-gradient(135deg, var(--gold-2), #f7f6f4); border-radius: 8px; border: 2px solid var(--gold); margin: 0 35px;">
-          <h6 class="text-center mb-2" style="color: var(--gold-dark); font-weight: 600; font-family: 'Crimson Text', serif; letter-spacing: 0.5px;">Platinum Showroom Information</h6>
+          <h6 class="text-center mb-2" style="color: var(--gold-dark); font-weight: 600; font-family: serif; letter-spacing: 0.5px;">Platinum Showroom Information</h6>
           <div class="row g-2">
             <div class="col-md-6">
               <div class="d-flex align-items-center">
-                <strong style="color: var(--gold-dark); min-width: 140px; font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">CNIC No:</strong>
-                <span style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600;"><?= esc($showroom['cnic_no'] ?? '') ?></span>
+                <strong style="color: var(--gold-dark); min-width: 140px; font-family: serif; font-weight: 600; letter-spacing: 0.5px;">CNIC No:</strong>
+                <span style="color: var(--gold-dark); font-family: serif; font-weight: 600;"><?= esc($showroom['cnic_no'] ?? '') ?></span>
               </div>
             </div>
             <div class="col-md-6">
               <div class="d-flex align-items-center">
-                <strong style="color: var(--gold-dark); min-width: 140px; font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">Mobile Number:</strong>
-                <span style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600;"><?= esc($showroom['cell_no'] ?? $showroom['phone'] ?? '') ?></span>
+                <strong style="color: var(--gold-dark); min-width: 140px; font-family: serif; font-weight: 600; letter-spacing: 0.5px;">Mobile Number:</strong>
+                <span style="color: var(--gold-dark); font-family: serif; font-weight: 600;"><?= esc($showroom['cell_no'] ?? $showroom['phone'] ?? '') ?></span>
               </div>
             </div>
             <div class="col-md-6">
               <div class="d-flex align-items-center">
-                <strong style="color: var(--gold-dark); min-width: 140px; font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">Showroom Name:</strong>
-                <span style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600;"><?= esc($showroom['showroom_name'] ?? '') ?></span>
+                <strong style="color: var(--gold-dark); min-width: 140px; font-family: serif; font-weight: 600; letter-spacing: 0.5px;">Showroom Name:</strong>
+                <span style="color: var(--gold-dark); font-family: serif; font-weight: 600;"><?= esc($showroom['showroom_name'] ?? '') ?></span>
               </div>
             </div>
             <div class="col-md-6">
               <div class="d-flex align-items-center">
-                <strong style="color: var(--gold-dark); min-width: 140px; font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">Address:</strong>
-                <span style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600;"><?= esc($showroom['showroom_address'] ?? '') ?></span>
+                <strong style="color: var(--gold-dark); min-width: 140px; font-family: serif; font-weight: 600; letter-spacing: 0.5px;">Address:</strong>
+                <span style="color: var(--gold-dark); font-family: serif; font-weight: 600;"><?= esc($showroom['showroom_address'] ?? '') ?></span>
               </div>
             </div>
           </div>
@@ -514,17 +515,17 @@
           <div class="col-1"></div>
           <div class="col-4">
             <div class="text-center mb-2">
-              <img src="<?= base_url('public/assets/signature/signature-gold.png') ?>" alt="Signature" style="width: 80px;/* height: auto; */object-fit: contain;display: block;margin-top: -20px;">
+              <img src="<?= base_url('public/assets/signature/signature-white.png') ?>" alt="Signature" style="width: 80px;/* height: auto; */object-fit: contain;display: block;margin-top: -20px;">
             </div>
             <div class="meta-line"></div>
-            <div class="meta-label" style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">Signature</div>
-            <div class="small mt-2" style="color: var(--silver); font-family: 'Crimson Text', serif; font-weight: 500;">Muhammad Yaseen Beharn (PRESIDENT)</div>
+            <div class="meta-label" style="color: var(--gold-dark); font-family: serif; font-weight: 600; letter-spacing: 0.5px;">Signature</div>
+            <div class="small mt-2" style="color: var(--silver); font-family: serif; font-weight: 500;">Muhammad Yaseen Beharn (PRESIDENT)</div>
           </div>
           <div class="col-3 ps-3">
             
             <div class="small mt-2" id="issueDateLine" style="color: var(--silver); font-family: 'Crimson Text', serif; font-weight: 500;"></div>
             <div class="meta-line"></div>
-            <div class="meta-label" style="color: var(--gold-dark); font-family: 'Crimson Text', serif; font-weight: 600; letter-spacing: 0.5px;">Date</div>
+            <div class="meta-label" style="color: var(--gold-dark); font-family: serif; font-weight: 600; letter-spacing: 0.5px;">Date</div>
              <div class="small mt-2" id="" style="visibility: hidden;">      -</div>
           </div>
           <div class="col-4 text-center">
