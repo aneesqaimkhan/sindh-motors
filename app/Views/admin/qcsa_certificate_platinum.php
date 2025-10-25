@@ -83,14 +83,12 @@
       letter-spacing:.8px; 
       color:var(--gold); 
       font-weight:600;
-      text-shadow: 0 1px 3px var(--silver);
     }
 
     .headline{ 
       font-family:'Playfair Display', serif; 
       color:var(--gold); 
       font-weight:700; 
-      text-shadow: 0 2px 4px var(--silver);
     }
     .subhead{ 
       font-family:'Crimson Text', serif; 
@@ -113,7 +111,6 @@
       color:var(--gold); 
       line-height:1.2; 
       font-weight:600;
-      text-shadow: 0 2px 4px var(--silver);
     }
 
     .badge{
@@ -207,21 +204,18 @@
         font-size: 28px !important; 
         line-height: 1.2 !important;
         color: var(--gold) !important;
-        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .headline{ 
         font-size: 42px !important;
         font-weight: 700 !important;
         letter-spacing: 1.5px !important;
         color: var(--gold) !important;
-        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .headline.display-6 {
         font-size: 42px !important;
         font-weight: 700 !important;
         letter-spacing: 1.5px !important;
         color: var(--gold) !important;
-        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .d-flex.align-items-center.justify-content-center.mb-3 {
         margin-top: 35px !important;
@@ -360,55 +354,46 @@
         font-size: 26px !important;
         font-weight: 700 !important;
         color: var(--gold) !important;
-        text-shadow: 0 1px 3px var(--silver) !important;
       }
       .brand-title.h3 {
         font-size: 26px !important;
         font-weight: 700 !important;
         color: var(--gold) !important;
-        text-shadow: 0 1px 3px var(--silver) !important;
       }
       .h3.brand-title {
         font-size: 26px !important;
         font-weight: 700 !important;
         color: var(--gold) !important;
-        text-shadow: 0 1px 3px var(--silver) !important;
       }
       .d-flex.align-items-center.justify-content-center.mb-3 .brand-title {
         font-size: 26px !important;
         font-weight: 700 !important;
         color: var(--gold) !important;
-        text-shadow: 0 1px 3px var(--silver) !important;
       }
       .display-6 {
         font-size: 42px !important;
         font-weight: 700 !important;
         color: var(--gold) !important;
-        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .text-center .headline {
         font-size: 42px !important;
         font-weight: 700 !important;
         color: var(--gold) !important;
-        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .text-center .display-6 {
         font-size: 42px !important;
         font-weight: 700 !important;
         color: var(--gold) !important;
-        text-shadow: 0 2px 4px var(--silver) !important;
       }
       div.headline {
         font-size: 42px !important;
         color: var(--gold) !important;
-        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .position-relative .headline.display-6 {
         font-size: 42px !important;
         font-weight: 700 !important;
         letter-spacing: 1.5px !important;
         color: var(--gold) !important;
-        text-shadow: 0 2px 4px var(--silver) !important;
       }
       .fs-5 {
         font-size: 17px !important;
@@ -445,7 +430,6 @@
         letter-spacing: 1.5px !important;
         line-height: 1.2 !important;
         color: var(--gold) !important;
-        text-shadow: 0 2px 4px var(--silver) !important;
       }
     }
   </style>
