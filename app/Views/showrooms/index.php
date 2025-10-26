@@ -112,10 +112,11 @@
 
         /* Inactive showroom highlighting */
         .showroom-card.inactive {
-            border: 3px solid #dc3545;
-            background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
-            box-shadow: 0 10px 30px rgba(220, 53, 69, 0.2);
+            border: 4px solid #dc3545;
+            background: linear-gradient(135deg, #ffe6e6 0%, #fff0f0 50%, #ffffff 100%);
+            box-shadow: 0 15px 35px rgba(220, 53, 69, 0.25);
             position: relative;
+            animation: pulse-inactive 2s infinite;
         }
 
         .showroom-card.inactive::before {
@@ -124,14 +125,53 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #dc3545, #c82333);
+            height: 6px;
+            background: linear-gradient(90deg, #dc3545, #c82333, #dc3545);
             border-radius: 15px 15px 0 0;
+            animation: shimmer 3s infinite;
+        }
+
+        .showroom-card.inactive::after {
+            content: '⚠️ SUSPENDED';
+            position: absolute;
+            top: -15px;
+            right: -10px;
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+            z-index: 10;
+            animation: bounce-warning 2s infinite;
         }
 
         .showroom-card.inactive:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(220, 53, 69, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(220, 53, 69, 0.4);
+        }
+
+        @keyframes pulse-inactive {
+            0%, 100% { 
+                box-shadow: 0 15px 35px rgba(220, 53, 69, 0.25);
+            }
+            50% { 
+                box-shadow: 0 15px 35px rgba(220, 53, 69, 0.4);
+            }
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        @keyframes bounce-warning {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-5px); }
+            60% { transform: translateY(-3px); }
         }
 
         .showroom-header {
@@ -191,19 +231,58 @@
         .status-inactive {
             background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
             color: white;
-            font-weight: 700;
+            font-weight: 900;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            padding: 0.25rem 0.75rem;
-            border-radius: 15px;
-            font-size: 0.8rem;
+            letter-spacing: 1px;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
             display: inline-flex;
             align-items: center;
-            gap: 0.25rem;
+            gap: 0.5rem;
+            box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+            border: 2px solid #fff;
+            animation: pulse-badge 1.5s infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .status-inactive::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shine 2s infinite;
         }
 
         .status-inactive i {
-            font-size: 0.9rem;
+            font-size: 1rem;
+            animation: shake 0.5s infinite;
+        }
+
+        @keyframes pulse-badge {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+            }
+            50% { 
+                transform: scale(1.05);
+                box-shadow: 0 6px 20px rgba(220, 53, 69, 0.6);
+            }
+        }
+
+        @keyframes shine {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-2px); }
+            75% { transform: translateX(2px); }
         }
 
         .showroom-info {
@@ -350,7 +429,7 @@
                                    value="<?= esc($search ?? '') ?>">
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-3">
+                    <div class="col-lg-2 mb-3">
                         <select name="category" class="form-select filter-select" id="categorySelect">
                             <option value="all">All Categories</option>
                             <?php foreach ($categories as $cat): ?>
@@ -361,6 +440,14 @@
                             <?php endforeach; ?>
                         </select>
                     </div>
+                    <div class="col-lg-2 mb-3">
+                        <select name="status" class="form-select filter-select" id="statusSelect">
+                            <option value="all">All Status</option>
+                            <option value="active" <?= (isset($selected_status) && $selected_status === 'active') ? 'selected' : '' ?>>Active</option>
+                            <option value="inactive" <?= (isset($selected_status) && $selected_status === 'inactive') ? 'selected' : '' ?>>Inactive</option>
+                            <option value="pending" <?= (isset($selected_status) && $selected_status === 'pending') ? 'selected' : '' ?>>Pending</option>
+                        </select>
+                    </div>
                     <div class="col-lg-1 mb-3">
                         <button type="submit" class="btn btn-primary-showroom w-100">
                             <i class="fas fa-search"></i>
@@ -369,7 +456,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 text-center">
-                        <?php if (!empty($search) || (!empty($selected_category) && $selected_category !== 'all')): ?>
+                        <?php if (!empty($search) || (!empty($selected_category) && $selected_category !== 'all') || (!empty($selected_status) && $selected_status !== 'all')): ?>
                             <a href="<?= base_url('showrooms') ?>" class="btn btn-outline-secondary btn-sm">
                                 <i class="fas fa-times me-2"></i>Clear Filters
                             </a>
@@ -399,7 +486,7 @@
                                          <?php if ($showroom['status'] === 'inactive'): ?>
                                              <span class="status-inactive">
                                                  <i class="fas fa-exclamation-triangle"></i>
-                                                 Suspend
+                                                 SUSPENDED
                                              </span>
                                          <?php endif; ?>
                                      </div>
@@ -471,6 +558,15 @@
                 });
             }
 
+            // Auto-submit form when status changes
+            const statusSelect = document.getElementById('statusSelect');
+            if (statusSelect) {
+                statusSelect.addEventListener('change', function() {
+                    console.log('Status changed to:', this.value);
+                    this.form.submit();
+                });
+            }
+
             // Auto-submit form when search input changes (with debounce)
             const searchInput = document.getElementById('searchInput');
             let searchTimeout;
@@ -499,7 +595,8 @@
             const urlParams = new URLSearchParams(window.location.search);
             console.log('Current search params:', {
                 search: urlParams.get('search'),
-                category: urlParams.get('category')
+                category: urlParams.get('category'),
+                status: urlParams.get('status')
             });
         });
     </script>

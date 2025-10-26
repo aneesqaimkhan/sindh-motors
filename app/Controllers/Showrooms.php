@@ -20,10 +20,12 @@ class Showrooms extends BaseController
     {
         $search = $this->request->getGet('search');
         $category = $this->request->getGet('category');
+        $status = $this->request->getGet('status');
         
         // Debug: Log the search parameters
         log_message('debug', 'Search: ' . $search);
         log_message('debug', 'Category: ' . $category);
+        log_message('debug', 'Status: ' . $status);
         
         // Build query for all showrooms (including inactive)
         $builder = $this->showroomModel->builder();
@@ -47,6 +49,11 @@ class Showrooms extends BaseController
             $builder->where('category', $category);
         }
         
+        // Apply status filter
+        if (!empty($status) && $status !== 'all') {
+            $builder->where('status', $status);
+        }
+        
         $showrooms = $builder->orderBy('showroom_name', 'ASC')->get()->getResultArray();
         
         // Add member count to each showroom
@@ -65,12 +72,18 @@ class Showrooms extends BaseController
         // Debug: Log the results
         log_message('debug', 'Found ' . count($showrooms) . ' showrooms');
         
+        // Debug: Log showroom statuses
+        foreach ($showrooms as $showroom) {
+            log_message('debug', 'Showroom: ' . $showroom['showroom_name'] . ' - Status: ' . $showroom['status']);
+        }
+        
         $data = [
             'title' => 'Our Showrooms - Qasimabad Car Showroom Association',
             'showrooms' => $showrooms,
             'categories' => $categories,
             'search' => $search,
-            'selected_category' => $category
+            'selected_category' => $category,
+            'selected_status' => $status
         ];
         
         return view('showrooms/index', $data);
