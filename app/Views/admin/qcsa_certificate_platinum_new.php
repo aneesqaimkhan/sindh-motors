@@ -52,8 +52,8 @@
     }
 
     .logo{
-      width:96px;
-      height:96px;
+      width:80px;
+      height:80px;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -63,7 +63,7 @@
 
 
     h1{
-      font-size:48px;
+      font-size:36px;
       letter-spacing:2px;
       margin:0;
       font-weight:800;
@@ -252,7 +252,7 @@
 
       <div class="logo" aria-hidden="true">
         <!-- simple car icon in circle to imitate original -->
-        <img src="<?= base_url('public/assets/certificate/car-logo.png') ?>" alt="Award Badge" style="width: 300px; height: 150px; object-fit: contain;">
+        <img src="<?= base_url('public/assets/certificate/car-logo.png') ?>" alt="Award Badge" style="width: 240px; height: 120px; object-fit: contain;">
       </div>
 
       <h1>Platinum Class Certificate</h1>
