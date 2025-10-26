@@ -29,10 +29,10 @@
       align-items:center;
       justify-content:center;
       padding:4vh 5vw;
-      background-image: url('<?= base_url('public/assets/certificate/border-img.png') ?>  ');
-      background-repeat:no-repeat;
-      background-position:center;
-      background-size:100% 100%;
+      background-image: url('<?= base_url('public/assets/certificate/border-img.png') ?>');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     }
 
     /* content card is transparent so the background's border remains visible */
@@ -153,6 +153,8 @@
     @media screen {
       .certificate {
         padding: 2vh 3vw;
+        /* Ensure background image is visible in browser */
+        background-attachment: scroll;
       }
       .card {
         width: 65%;
@@ -195,7 +197,7 @@
   </style>
 </head>
 <body>
-  <div class="certificate">
+  <div class="certificate" style="background-image: url('<?= base_url('public/assets/certificate/border-img.png') ?>');">
     <div class="card" role="main">
 
       <div class="logo" aria-hidden="true">
@@ -209,7 +211,7 @@
 
       <h1>Platinum Class Certificate</h1>
       <div class="subtitle">This certificate is proudly presented to</div>
-      <div class="name">Ali Raza 1</div>
+      <div class="name"><?= esc($showroom['name']) ?></div>
       <div class="badge">Platinum Member</div>
 
       <p class="desc">In recognition of their commitment to excellence in the automotive community and adherence to QCSA standards.</p>
