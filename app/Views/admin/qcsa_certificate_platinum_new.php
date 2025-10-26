@@ -47,7 +47,7 @@
       padding:3vh 3vw;
       color:var(--accent);
       text-align:center;
-      gap:1rem;
+      gap:0.5rem;
       position:relative;
     }
 
@@ -110,7 +110,7 @@
     /* Showroom details box */
     .showroom-details{
       max-width:800px;
-      margin-top:12px;
+      margin-top:6px;
       padding:12px 20px;
       border:2px solid rgba(200,200,200,0.15);
       border-radius:12px;
@@ -161,7 +161,7 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:1rem;
+      gap:0.5rem;
       padding-top:15px;
     }
 
@@ -261,7 +261,6 @@
       <div class="badge">Platinum Member</div>
 
       <p class="desc">In recognition of their commitment to excellence in the automotive community and adherence to QCSA standards.</p>
-
       <div class="showroom-details">
         <h3>Showroom Details</h3>
         <div class="details-grid">
@@ -301,7 +300,7 @@
           <span class="footer-note">Membership Certificate Distribution Ceremony</span>
         </div>
 
-        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:10px;">
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:5px;">
           <div class="qr" aria-hidden="true">
           <img src="<?= base_url('admin/qrcode/' . $showroom['id']) ?>" alt="Showroom QR Code" class="qr-code-img" style="width: 90px; height: 90px; object-fit: contain;">
           </div>
