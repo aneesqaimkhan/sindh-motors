@@ -401,7 +401,7 @@ class Admin extends BaseController
 
         // Check if showroom category is Platinum to use Platinum certificate
         if (strtolower($showroom['category']) === 'platinum') {
-            return view('admin/qcsa_certificate_platinum', $data);
+            return view('admin/qcsa_certificate_platinum_new', $data);
         } else {
             return view('admin/qcsa_certificate', $data);
         }
