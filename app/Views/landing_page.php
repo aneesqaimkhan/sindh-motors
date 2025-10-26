@@ -544,7 +544,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
                     <div class="team-card">
                         <div class="team-image">
-                            <img src="<?= FCPATH.'/public/assets/team/1.jpeg' ?>" alt="Team Member" class="img-fluid">
+                            <img src="<?= base_url('public/assets/team/1.jpeg') ?>"  alt="Team Member" class="img-fluid">
                         </div>
                         <div class="team-info">
                             <h4>Muhammad Yaseen Beharn</h4>
