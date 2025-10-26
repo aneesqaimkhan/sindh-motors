@@ -111,6 +111,7 @@
     .showroom-details{
       width:700px;
       margin-top:6px;
+      margin-bottom:20px;
       padding:12px 20px;
       border:2px solid rgba(200,200,200,0.15);
       border-radius:12px;
@@ -230,6 +231,7 @@
         max-width:600px;
         padding:10px 15px;
         margin-top:4px;
+        margin-bottom:15px;
       }
       .showroom-details h3{
         font-size:18px;
