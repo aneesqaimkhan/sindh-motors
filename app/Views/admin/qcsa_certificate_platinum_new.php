@@ -109,7 +109,7 @@
 
     /* Showroom details box */
     .showroom-details{
-      max-width:800px;
+      width:700px;
       margin-top:6px;
       padding:12px 20px;
       border:2px solid rgba(200,200,200,0.15);
@@ -220,6 +220,22 @@
       .name{font-size:32px}
       .card{padding:4vh 3vw}
       .org{font-size:16px}
+      .showroom-details{
+        width:90%;
+        max-width:600px;
+        padding:10px 15px;
+        margin-top:4px;
+      }
+      .showroom-details h3{
+        font-size:18px;
+      }
+      .details-grid{
+        grid-template-columns:1fr;
+        gap:3px 10px;
+      }
+      .detail-value{
+        font-size:15px;
+      }
     }
 
     /* print as landscape by default */
@@ -270,15 +286,15 @@
           </div>
           <div class="detail-item">
             <div class="detail-label">CNIC</div>
-            <div class="detail-value"><?= esc($showroom['cnic'] ?? 'N/A') ?></div>
+            <div class="detail-value"><?= esc($showroom['cnic_no'] ?? 'N/A') ?></div>
           </div>
           <div class="detail-item">
             <div class="detail-label">Mobile Number</div>
-            <div class="detail-value"><?= esc($showroom['mobile'] ?? 'N/A') ?></div>
+            <div class="detail-value"><?= esc($showroom['cell_no'] ?? 'N/A') ?></div>
           </div>
           <div class="detail-item">
             <div class="detail-label">Address</div>
-            <div class="detail-value"><?= esc($showroom['address'] ?? 'N/A') ?></div>
+            <div class="detail-value"><?= esc($showroom['showroom_address'] ?? 'N/A') ?></div>
           </div>
         </div>
       </div>
