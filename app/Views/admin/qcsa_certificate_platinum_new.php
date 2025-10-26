@@ -54,8 +54,6 @@
     .logo{
       width:96px;
       height:96px;
-      border-radius:50%;
-      border:3px solid rgba(200,200,200,0.18);
       display:flex;
       align-items:center;
       justify-content:center;
@@ -63,7 +61,6 @@
       backdrop-filter: blur(2px);
     }
 
-    .logo svg{width:60px;height:60px;opacity:0.9}
 
     h1{
       font-size:48px;
@@ -202,11 +199,7 @@
 
       <div class="logo" aria-hidden="true">
         <!-- simple car icon in circle to imitate original -->
-        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="32" cy="32" r="30" stroke="rgba(200,200,200,0.18)" stroke-width="2"/>
-          <rect x="14" y="26" width="36" height="14" rx="4" fill="rgba(200,200,200,0.06)" stroke="rgba(200,200,200,0.25)"/>
-          <path d="M20 34h4M40 34h4" stroke="rgba(200,200,200,0.35)" stroke-width="2" stroke-linecap="round"/>
-        </svg>
+        <img src="<?= base_url('public/assets/certificate/car-logo.png') ?>" alt="Award Badge" style="width: 300px; height: 150px; object-fit: contain;">
       </div>
 
       <h1>Platinum Class Certificate</h1>
@@ -234,7 +227,9 @@
         </div>
 
         <div style="display:flex;flex-direction:column;align-items:flex-end;gap:10px;">
-          <div class="qr" aria-hidden="true"></div>
+          <div class="qr" aria-hidden="true">
+          <img src="<?= base_url('admin/qrcode/' . $showroom['id']) ?>" alt="Showroom QR Code" class="qr-code-img" style="width: 90px; height: 90px; object-fit: contain;">
+          </div>
         </div>
       </div>
 

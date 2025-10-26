@@ -645,7 +645,7 @@
                             <img src="<?= base_url('public/assets/team/9.jpeg') ?>" alt="Team Member" class="img-fluid">
                         </div>
                         <div class="team-info">
-                            <h4>Manshad Khan Bhandi</h4>
+                            <h4>Manshad Burdi                             </h4>
                             <p class="designation">FINANCE SECRETARY</p>
                         </div>
                     </div>

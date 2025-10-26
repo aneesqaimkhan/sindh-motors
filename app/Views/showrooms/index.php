@@ -399,7 +399,7 @@
                                          <?php if ($showroom['status'] === 'inactive'): ?>
                                              <span class="status-inactive">
                                                  <i class="fas fa-exclamation-triangle"></i>
-                                                 INACTIVE
+                                                 Suspend
                                              </span>
                                          <?php endif; ?>
                                      </div>
