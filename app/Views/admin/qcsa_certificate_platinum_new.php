@@ -219,7 +219,12 @@
       <div class="bottom" aria-label="certificate footer area">
         <div class="sign">
           <!-- Replace src with actual transparent signature image if you have one -->
-          <img src="/mnt/data/signature_placeholder.png" alt="signature" onerror="this.style.display='none'">
+          <img style=" 
+    width: 115px !important; 
+    height: 108px !important;
+    margin-left: 30px !important;
+    margin-top: -50px !important;
+" src="<?= base_url('public/assets/signature/signature-white.png') ?>" alt="signature" onerror="this.style.display='none'">
           <div style="font-size:14px;color:var(--muted);">Muhammad Yaseen Behan<br><strong style="color:var(--accent);">PRESIDENT</strong></div>
         </div>
 
