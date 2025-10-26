@@ -18,7 +18,6 @@
       font-family: Montserrat, Arial, sans-serif;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
-      background: #222; /* fallback */
     }
 
     /* Full page certificate wrapper */
@@ -30,25 +29,25 @@
       align-items:center;
       justify-content:center;
       padding:4vh 5vw;
-      background-image: var(--bg-image);
+      background-image: url('<?= base_url('public/assets/certificate/border-img.png') ?>  ');
       background-repeat:no-repeat;
       background-position:center;
-      background-size:contain;
+      background-size:100% 100%;
     }
 
     /* content card is transparent so the background's border remains visible */
     .card{
-      width: 90%;
-      max-width: 1200px;
-      min-height: 70vh;
+      width: 70%;
+      max-width: 900px;
+      min-height: 55vh;
       display:flex;
       flex-direction:column;
       align-items:center;
       justify-content:flex-start;
-      padding:6vh 6vw;
+      padding:3vh 3vw;
       color:var(--accent);
       text-align:center;
-      gap:1.6rem;
+      gap:1rem;
       position:relative;
     }
 
@@ -148,6 +147,19 @@
       border-radius:8px;
       background:#ddd; /* placeholder color - replace with actual QR image */
       opacity:0.12;
+    }
+
+    /* Browser view adjustments */
+    @media screen {
+      .certificate {
+        padding: 2vh 3vw;
+      }
+      .card {
+        width: 65%;
+        max-width: 800px;
+        min-height: 50vh;
+        padding: 2vh 2vw;
+      }
     }
 
     /* Responsive tweaks */
