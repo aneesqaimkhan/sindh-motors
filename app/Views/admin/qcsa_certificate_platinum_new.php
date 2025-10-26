@@ -129,7 +129,7 @@
 
     .details-grid{
       display:grid;
-      grid-template-columns:1fr 1fr;
+      grid-template-columns:1fr 1fr 1fr;
       gap:4px 15px;
       text-align:left;
     }
@@ -138,6 +138,11 @@
       display:flex;
       flex-direction:column;
       gap:1px;
+    }
+
+    .detail-item.address{
+      grid-column:1 / -1;
+      margin-top:8px;
     }
 
     .detail-label{
@@ -230,8 +235,11 @@
         font-size:18px;
       }
       .details-grid{
-        grid-template-columns:1fr;
-        gap:3px 10px;
+        grid-template-columns:1fr 1fr 1fr;
+        gap:3px 8px;
+      }
+      .detail-item.address{
+        grid-column:1 / -1;
       }
       .detail-value{
         font-size:15px;
@@ -292,7 +300,7 @@
             <div class="detail-label">Mobile Number</div>
             <div class="detail-value"><?= esc($showroom['cell_no'] ?? 'N/A') ?></div>
           </div>
-          <div class="detail-item">
+          <div class="detail-item address">
             <div class="detail-label">Address</div>
             <div class="detail-value"><?= esc($showroom['showroom_address'] ?? 'N/A') ?></div>
           </div>
