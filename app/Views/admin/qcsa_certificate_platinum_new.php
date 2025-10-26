@@ -57,7 +57,7 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      margin-bottom:6px;
+      margin-bottom:2px;
       backdrop-filter: blur(2px);
     }
 
@@ -69,38 +69,89 @@
       font-weight:800;
       color:var(--accent);
       text-transform:uppercase;
+      line-height:1.0;
     }
 
     .subtitle{
       font-size:18px;
       color:var(--muted);
-      margin-top:6px;
+      margin-top:2px;
+      line-height:1.0;
     }
 
     .name{
       font-size:48px;
-      margin:8px 0 0 0;
+      margin:4px 0 0 0;
       font-weight:700;
       color:var(--accent);
+      line-height:1.0;
     }
 
     .badge{
       display:inline-block;
-      margin-top:14px;
-      padding:12px 28px;
+      margin-top:8px;
+      padding:8px 20px;
       border-radius:28px;
       border:2px solid rgba(200,200,200,0.18);
       font-weight:600;
       color:var(--accent);
       background:rgba(255,255,255,0.01);
+      line-height:1.0;
     }
 
     .desc{
       max-width:900px;
-      margin-top:18px;
+      margin-top:10px;
       font-size:18px;
       color:var(--muted);
-      line-height:1.6;
+      line-height:1.1;
+    }
+
+    /* Showroom details box */
+    .showroom-details{
+      max-width:800px;
+      margin-top:12px;
+      padding:12px 20px;
+      border:2px solid rgba(200,200,200,0.15);
+      border-radius:12px;
+      background:rgba(255,255,255,0.02);
+      backdrop-filter: blur(1px);
+    }
+
+    .showroom-details h3{
+      font-size:20px;
+      font-weight:600;
+      color:var(--accent);
+      margin:0 0 8px 0;
+      text-align:center;
+      line-height:1.0;
+    }
+
+    .details-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:4px 15px;
+      text-align:left;
+    }
+
+    .detail-item{
+      display:flex;
+      flex-direction:column;
+      gap:1px;
+    }
+
+    .detail-label{
+      font-size:14px;
+      color:var(--muted);
+      font-weight:500;
+      line-height:1.0;
+    }
+
+    .detail-value{
+      font-size:16px;
+      color:var(--accent);
+      font-weight:600;
+      line-height:1.0;
     }
 
     /* Bottom area with signature and organization text */
@@ -111,14 +162,14 @@
       align-items:center;
       justify-content:space-between;
       gap:1rem;
-      padding-top:28px;
+      padding-top:15px;
     }
 
     .sign{
       display:flex;
       flex-direction:column;
       align-items:flex-start;
-      gap:8px;
+      gap:4px;
     }
 
     .sign img{height:52px;object-fit:contain}
@@ -129,14 +180,16 @@
       font-size:20px;
       color:var(--accent);
       font-weight:600;
+      line-height:1.0;
     }
 
     .footer-note{
       width:100%;
-      margin-top:8px;
+      margin-top:4px;
       font-size:16px;
       color:var(--muted);
       text-align:center;
+      line-height:1.0;
     }
 
     .qr{
@@ -208,6 +261,28 @@
       <div class="badge">Platinum Member</div>
 
       <p class="desc">In recognition of their commitment to excellence in the automotive community and adherence to QCSA standards.</p>
+
+      <div class="showroom-details">
+        <h3>Showroom Details</h3>
+        <div class="details-grid">
+          <div class="detail-item">
+            <div class="detail-label">Showroom Name</div>
+            <div class="detail-value"><?= esc($showroom['name']) ?></div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">CNIC</div>
+            <div class="detail-value"><?= esc($showroom['cnic'] ?? 'N/A') ?></div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Mobile Number</div>
+            <div class="detail-value"><?= esc($showroom['mobile'] ?? 'N/A') ?></div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Address</div>
+            <div class="detail-value"><?= esc($showroom['address'] ?? 'N/A') ?></div>
+          </div>
+        </div>
+      </div>
 
       <div class="bottom" aria-label="certificate footer area">
         <div class="sign">
