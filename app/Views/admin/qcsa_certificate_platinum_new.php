@@ -172,10 +172,25 @@
 
     /* print as landscape by default */
     @media print{
-      @page { size: A4 landscape; }
+      @page { 
+        size: A4 landscape;
+        margin: 0;
+      }
       html,body{height:auto}
       .certificate{padding:0}
       .card{box-shadow:none}
+      
+      /* Hide print details */
+      @page {
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Remove any browser print headers/footers */
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
     }
   </style>
 </head>
